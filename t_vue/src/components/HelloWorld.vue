@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+     <img src="../../static/f90fd75a0cd8233ec9d90e298e8cb628.jpeg" style=" width: 100%;height: 100%; " />
     <h1>{{ msg }}</h1>
   </div>
 </template>

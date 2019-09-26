@@ -1,22 +1,29 @@
 <template>
   <div id="app">
-   <!--  <img src="../static/f90fd75a0cd8233ec9d90e298e8cb628.jpeg" style="  width: 20%; height: 20%; "> -->
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
-}
+  name: "App"
+};
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background: #387cc2 url() 50% 50% no-repeat;
+  background-size: cover;
+}
+#app{
+  height: 100%;
 }
 </style>
