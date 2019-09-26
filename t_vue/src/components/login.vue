@@ -3,13 +3,13 @@
     <div class="logo"></div>
     <div class="form-item">
       <el-form ref="form" :mode="form">
-        <el-row>
+        <el-form-item>
           <el-input v-model="form.name" placeholder="邮箱"></el-input>
-        </el-row>
-        <el-row>
+        </el-form-item>
+        <el-form-item>
           <el-input v-model="form.password" placeholder="密码" show-password></el-input>
-        </el-row>
-        <el-button size="medium"   @click="onSubmit" round>登录</el-button>
+        </el-form-item>
+        <el-button size="success"  @click="onSubmit" round style=" width:360px; ">登录</el-button>
       </el-form>
     </div>
   </div>
