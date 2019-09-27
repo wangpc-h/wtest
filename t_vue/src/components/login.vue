@@ -9,7 +9,7 @@
         <el-form-item>
           <el-input v-model="form.password" placeholder="密码" show-password></el-input>
         </el-form-item>
-        <el-button size="success"  @click="onSubmit" round style=" width:360px; ">登录</el-button>
+        <el-button size="success" @click="onSubmit" round style=" width:360px; ">登录</el-button>
       </el-form>
     </div>
   </div>
@@ -26,7 +26,16 @@ export default {
   },
   methods: {
     onSubmit() {
-      console.log(this.form);
+      if (this.form.name == "wpc" && this.form.password == "a123") {
+        console.log(this.form);
+        this.$message({
+          message: "登录成功",
+          type: "success"
+        });
+      } else {
+        this.$message.error("邮箱或密码错误");
+        return;
+      }
     }
   }
 };
@@ -58,5 +67,4 @@ export default {
   margin: 0 auto;
   padding-bottom: 30px;
 }
-
 </style>
