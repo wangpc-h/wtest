@@ -32,6 +32,7 @@ export default {
           message: "登录成功",
           type: "success"
         });
+        this.$router.push('/home');
       } else {
         this.$message.error("邮箱或密码错误");
         return;
